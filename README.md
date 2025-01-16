@@ -19,7 +19,6 @@ The solution defines the following functions to manage locking and unlocking of 
 
 
 
-All functions are explained in detail below.
 ## Implementation Details
 The implementation utilizes Java's concurrency model to manage multiple reader and writer threads. Each thread either acquires a read lock or a write lock depending on its type, performs its task (reading or writing), and then releases the appropriate lock when finished. The program randomly generates a number of readers and writers and simulates their execution. To make it more realistic, sleep functions are called for simulating reading and writing processes.
 
